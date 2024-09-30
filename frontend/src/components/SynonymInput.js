@@ -7,7 +7,7 @@ const SynonymInput = () => {
 
     const addSynonym = async () => {
         try {
-            const response = await axios.post('http://localhost:10000/api/synonyms/add', {
+            const response = await axios.post('https://synonimsapp-1.onrender.com/api/synonyms/add', {
                 word,
                 synonym,
             });

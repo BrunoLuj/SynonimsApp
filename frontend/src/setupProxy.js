@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://localhost:10000',
+      target: 'https://synonimsapp-1.onrender.com',
       changeOrigin: true,
     })
   );
