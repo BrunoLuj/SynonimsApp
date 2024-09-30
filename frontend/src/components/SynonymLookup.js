@@ -6,7 +6,7 @@ const SynonymLookup = () => {
   const [synonyms, setSynonyms] = useState([]);
 
   const lookupSynonyms = async () => {
-    const response = await axios.get(`http://localhost:5000/api/synonyms/lookup/${word}`);
+    const response = await axios.get(`http://localhost:10000/api/synonyms/lookup/${word}`);
     setSynonyms(response.data);
   };
 
