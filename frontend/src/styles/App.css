@@ -1,0 +1,14 @@
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  input {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
