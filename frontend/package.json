@@ -20,6 +20,8 @@
     ">0.2%",
     "not dead",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
-
