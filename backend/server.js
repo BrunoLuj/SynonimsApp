@@ -11,15 +11,14 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '../frontend/build'))); // Adjust path if necessary
 
 // API Routes
 app.use('/api/synonyms', synonymsRouter);
 
-// The "catchall" handler: for any request that doesn't match above,
-// send back the React app.
+// Catch-all route to serve index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html')); // Adjust path if necessary
 });
 
 // Start server
