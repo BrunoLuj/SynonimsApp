@@ -12,7 +12,12 @@
       {
         "src": "/(.*)",
         "dest": "/build/$1"
+      },
+      {
+        "src": "/",
+        "dest": "/index.html"
       }
     ]
   }
+
   
