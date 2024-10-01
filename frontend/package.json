@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "[my-framework] build --output public"
+    "build": "react-scripts build"
   },
   "browserslist": [
     ">0.2%",
